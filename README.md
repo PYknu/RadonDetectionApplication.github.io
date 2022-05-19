@@ -1,7 +1,5 @@
 # RadonDetectionApplication.github.io
 
-#!/usr/local/bin/python
-# coding: UTF-8
 import os, sys
 from kivy.app import App
 
