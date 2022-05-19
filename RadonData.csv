@@ -1,0 +1,16 @@
+Number of particles,Humidity,Temperature,Preasure,Time,Wind,Washed?,Technic,Alfarad concentration
+20,27,23,751,2,N,Weak,N,42
+22,27,23,751,2,N,Weak,N,59
+15,27,23,751,2,N,Weak,N,25
+39,31,21,751,2,N,Day,Y,153
+50,31,21,751,2,N,Day,Y,199
+30,31,21,751,2,N,Day,Y,107
+27,29,25,751,10,N,Weak,N,68
+29,29,25,751,10,N,Weak,N,77
+25,29,25,751,10,N,Weak,N,59
+4,36,23,751,5,Y,Day,N,15
+5,36,23,751,5,Y,Day,N,19
+3,36,23,751,5,Y,Day,N,11
+7,36,23,751,5,Y,Day,N,17
+8,36,23,751,5,Y,Day,N,21
+9,36,23,751,5,Y,Day,N,25
