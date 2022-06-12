@@ -1,25 +1,21 @@
 # RadonDetectionApplication.github.io
-
 import os, sys
 from kivy.app import App
-
 import cv2
 import numpy as np
 import pandas as pd
-
 from kivy.config import Config
-Config.set('graphics','resizable', '0');
-Config.set('graphics','width', '1000');
-Config.set('graphics','height', '1000');
-
 from kivy.uix.textinput import TextInput
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.image import Image
 from kivy.clock import Clock
 from kivy.graphics.texture import Texture
-
 import statsmodels.api as sm
 from sklearn.preprocessing import StandardScaler
+
+Config.set('graphics','resizable', '0');
+Config.set('graphics','width', '1000');
+Config.set('graphics','height', '1000');
 
 class MyApp(App):
     def build(self):
@@ -27,7 +23,7 @@ class MyApp(App):
         self.layout = BoxLayout()
         self.layout.add_widget(self.img1)
         self.capture = cv2.VideoCapture(0)
-        self.textinput = TextInput(text='Снизить концентрацию радона в уже существующих зданиях позволяет принятие следующих мер:\n1) более интенсивная вентиляция подпольного пространства;\n2) обустройство системы отвода радона в основании здания или под монолитным полом на грунтовом основании;\n3) предотвращение поступления радона из подвального пространства в жилые помещения;\n4) заделка трещин и щелей в полах и стенах;\n5) улучшение вентилирования помещений.', multiline=True, font_size = 24)
+        self.textinput = TextInput(text='Снизить концентрацию радона в уже существующих зданиях позволяет принятие следующих мер:\n1) более интенсивная вентиляция  подпольного пространства;\n2) обустройство системы отвода радона в основании здания или под монолитным полом на грунтовом основании;\n3) предотвращение поступления радона из подвального пространства в жилые помещения;\n4) заделка трещин и щелей в полах и стенах;\n5) улучшение вентилирования помещений.', multiline=True, font_size = 24)
         self.layout.add_widget(self.textinput)
         Clock.schedule_interval(self.update, 1.0 / 33.0)
         return self.layout
