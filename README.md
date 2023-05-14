@@ -1,6 +1,6 @@
 # RadonDetectionApplication.github.io
 
-
+# Packages
 import os, sys
 from kivy.app import App
 import cv2
@@ -80,6 +80,7 @@ class MyApp(App):
         self.texture1 = Texture.create(size=(imageFrame.shape[1], imageFrame.shape[0]), colorfmt='bgr')
         self.texture1.blit_buffer(buf, colorfmt='bgr', bufferfmt='ubyte')
         self.img1.texture = self.texture1
+        
 if __name__ == "__main__":
     MyApp().run()
     cv2.destroyAllWindows()
